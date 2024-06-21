@@ -1,0 +1,205 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+
+    --text-color : #fff;
+    --bg-color : rgba(0, 0, 0, 0.357);
+    --boder-stock : rgba(0, 128, 0, 0.792);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0 14px;
+    background: transparent;
+}
+
+header .logo h1{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+header nav ul li a{
+    color: var(--text-color);
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/001/849/553/small_2x/modern-gold-background-free-vector.jpg" ) no-repeat;
+    background-size: 100% 100%;
+}
+
+section .div{
+    padding: 0 15px;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+}
+
+section .div h2{
+    font-size: 24px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+section .div .content{
+    text-align: center;
+    padding: 14rem 0;
+}
+
+section .div .content h2{
+    font-size: 46px;
+}
+
+section .div .content p{
+    color: var(--text-color);
+    padding: 2rem 0;
+}
+
+section .div .content .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+section .div .content .btn button{
+    border: 2px solid var(--boder-stock);
+    padding: 10px 20px;
+    border-radius: 18px;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.humbgger{
+    display: none;
+    cursor: pointer;
+}
+
+.humbgger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    margin: 5px;
+}
+
+@media screen and (min-width:320px) and (max-width:500px) {
+    header nav ul{
+        display: none;
+    }
+
+    .humbgger{
+        display: block;
+    }
+
+    .humbgger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .humbgger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .humbgger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    header nav ul.active{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+    }
+
+    section .div .content{
+        padding: 6rem 0;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:768px) {
+    header nav ul{
+        display: none;
+    }
+
+    .humbgger{
+        display: block;
+    }
+
+    .humbgger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .humbgger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .humbgger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    header nav ul.active{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+    }
+
+    section .div .content{
+        padding: 6rem 0;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    header nav ul{
+        display: none;
+    }
+
+    .humbgger{
+        display: block;
+    }
+
+    .humbgger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .humbgger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .humbgger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    header nav ul.active{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+    }
+
+    section .div .content{
+        padding: 6rem 0;
+    }
+}

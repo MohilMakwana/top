@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div>
+    <b>3 : Define the list types in HTML? explaine with examples of navbar and apply a dropdown in navbar also ?</b>
+    <p>unordered list — used to group a set of related items in no particular order.</p>
+    <div>
+      &lt;ul&gt;<br>
+      &lt;li>Data Structures & Algorithm&lt;/li&gt;<br>
+      &lt;li>Web Technology&lt;/li&gt;<br>
+      &lt;li>Aptitude & Logical Reasoning&lt;/li&gt;<br>
+      &lt;li>Programming Languages&lt;/li&gt;<br>
+      &lt;/ul&gt;<br>
+    </div>
+    <p>ordered list — used to group a set of related items in a specific order.</p>
+    <div>
+      &lt;ol&gt;<br>
+      &lt;li>Array&lt;/li&gt;<br>
+      &lt;li>Linked List&lt;/li&gt;<br>
+      &lt;li>Stacks&lt;/li&gt;<br>
+      &lt;li>Queues&lt;/li&gt;<br>
+      &lt;li>Trees&lt;/li&gt;<br>
+      &lt;li>Graphs&lt;/li&gt;<br>
+      &lt;/ol&gt;<br>
+    </div>
+    <p>description list — used to display name/value pairs such as terms and definitions.</p>
+    <div>
+      &lt;dl&gt;<br>
+      &lt;dt>Coffee&lt;/dt&gt;<br>
+      &lt;dd>- black hot drink&lt;/dd&gt;<br>
+      &lt;dt>Milk&lt;/dt&gt;<br>
+      &lt;dd>- white cold drink&lt;/dd&gt;<br>
+      &lt;/dl&gt;<br>
+    </div>
+    </p>
+  </div>
+
+  <div class="Ex">
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    </p>
+  </div>
+</body>
+
+</html>

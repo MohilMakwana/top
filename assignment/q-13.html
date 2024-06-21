@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <b>Quest14. Write a JavaScript program to calculate multiplication and division of two numbers (input from the
+        user).</b>
+    <br><br>
+    <form>
+        1st Number : <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="divideBy()" Value="Divide" />
+    </form>
+    <p>The Result is : <br>
+        <span id="result"></span>
+    </p>
+
+
+    <script>
+        
+        // Define a function to multiply two numbers and display the result
+        function multiplyBy() {
+            // Get the values of the input fields with the ids "firstNumber" and "secondNumber"
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+
+            // Set the inner HTML of the element with the id "result" to the product of the two numbers
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+
+        // Define a function to divide two numbers and display the result
+        function divideBy() {
+            // Get the values of the input fields with the ids "firstNumber" and "secondNumber"
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+
+            // Set the inner HTML of the element with the id "result" to the quotient of the two numbers
+            document.getElementById("result").innerHTML = num1 / num2;
+        }
+
+    </script>
+</body>
+
+</html>
